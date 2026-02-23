@@ -16,6 +16,7 @@ export default function grid_layout() {
       if (num !== cellsecret.current) {
         setcount(count + 1)
         e.target.className = "cell x"
+        e.target.textContent = "X"
         setMessage("Keep Searching!")
       }
       else {

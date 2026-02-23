@@ -92,7 +92,10 @@ h1 {
   line-height: 1.1;
 }
 .x{
-  background-color: red;
+  /* background-color: transparent; */
+  color: red;
+  font-size: 39px;
+  font-weight: bold;
 }
 .v{
   background-color: greenyellow;
