@@ -63,18 +63,54 @@ a:hover {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.keep{
+  display: grid;
+  color: rgb(238, 241, 6);
+  grid-row: 16/17;
+  grid-column: 4/11;
+  font-size: 40px;
+}
+.suc{
+  display: grid;
+  color: greenyellow;
+  grid-row: 16/17;
+  grid-column: 1/18;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-self: center;
+}
 body {
   margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  justify-self: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+.x{
+  background-color: red;
+}
+.v{
+  background-color: greenyellow;
+  box-shadow: 0 0 30px 15px greenyellow;
+  z-index: 1;
+}
+.false-button{
+  display: none;
 
+}
+.true-button{
+  display: grid;
+  grid-row: 18;
+  grid-column: 3/8;
+  color: white;
+  background-color: #646cff;
+  border-radius: 7px;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
