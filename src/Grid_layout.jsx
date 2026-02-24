@@ -9,7 +9,7 @@ export default function grid_layout() {
   for (let i = 1; i <= 100; i++) {
     board.push(i)
   }
-  const cellsecret = useRef((Math.floor(Math.random() * 100) + 1))
+  const cellsecret = useRef((Math.floor(Math.random() * 100) + 1))  
   function onClick(e, num) {
     if (!clicks.includes(num)) {
       clicks.push(num)
@@ -42,11 +42,8 @@ export default function grid_layout() {
       <div className='click'>Clicks: {count}</div>
       <div className={message === "Sucress" ? "suc" : "keep"}>{message}</div>
       <button className={`${status}-button`} onClick={() => {
-        setMessage("")
-        setStatus("false")
-        setcount(0)
-
-      }}>now game</button>
+        location.reload()
+      }}><span>now game</span> </button>
     </div>
   )
 }
